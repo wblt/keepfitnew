@@ -1,0 +1,194 @@
+
+"auth_network_no"="Guy，No Network.";
+"auth_phone_err"="Your phone num. is wrong.";
+"auth_pwd_err"="Your password is wrong(6-18 num. or letter).";
+"auth_pwd_empty"="Your password is empty.";
+"auth_getauthcode"="Get Authcode.";
+"auth_service_wrong"="Service is wrong.";
+
+"同步中"="synchronous";
+
+"用户隐私"="Privacy Protection";
+
+"身体年龄"="BodyAge";
+"身高"="Height";
+"体重"="Weight";
+"脂肪"="Fat";
+"基础代谢"="BMR";
+"水分"="Water";
+"BMI"="BMI";
+"肌肉"="Muscle";
+"骨量"="Bone";
+"内脏脂肪"="VisceralFat";
+"步行"="Step";
+"步行路程"="Journey";
+"步行耗能"="Calories";
+"步行时间"="StepTime";
+
+"身体年龄Unit"="age";
+"身高Unit"="cm";
+"体重Unit"="kg";
+"脂肪Unit"="%";
+"基础代谢Unit"="kcal";
+"水分Unit"="%";
+"BMIUnit"="";
+"肌肉Unit"="%";
+"骨量Unit"="%";
+"内脏脂肪Unit"="";
+"步行Unit"="";
+"步行路程Unit"="km";
+"步行耗能Unit"="kcal";
+"步行时间Unit"="min.";
+
+"project_label"="Click on the add or delete Sort by drag and drop";
+
+"title_project"="Projects";
+"title_measure"="Measure";
+"title_step"="Step";
+"title_analysis"="Analysis";
+"title_me"="Me";
+
+"title_setting"="Settings";
+"title_login"="Login";
+"title_register"="Register";
+"title_profile"="Profile";
+"title_editpwd"="Password";
+"title_logout"="Logout";
+"title_useragreement"="User Agreement";
+"title_updatehealth"="Synchronous Apple Health";
+"title_measurelist"="MeausureList";
+"login_error"="Account password error";
+"密码修改成功"="Password reset complete";
+
+"step_km"="Km";
+"step_time"="Minutes";
+"step_todaystep"="TodayStep";
+"step_target"="Target";
+"step_unit"="step";
+"step_finish"="finish";
+
+"analysis_week"="Week";
+"analysis_month"="Month";
+"analysis_all"="All";
+"analysis_avg"="Avg ";
+"analysis_toweek"="VS last week";
+"analysis_tomonth"="VS last month";
+"analysis_toyear"="VS last year";
+"analysis_lowest"="Min. ";
+"analysis_most"="Max. ";
+"analysis_total"="Total ";
+
+"weightlist_year"="-";
+"weightlist_month"="-";
+"weightlist_day"="";
+"weightlist_cancle"="Cancle";
+"weightlist_ok"="OK";
+"weightlist_deleteinfo"="Are you sure to delete this record?";
+
+"weight_todayweight"="TodayWeight";
+
+"bodyfat_bodyfat"="BodyFat ";
+"bodyfat_attention"=" need to pay attention";
+"bodyfat_attention1"="attention to the ";
+"bodyfat_attention2"=" in all 8 measurement";
+"bodyfat_item"=" items";
+
+"cancle"="Cancel";
+"quit"="Logout";
+"finish"="Finish";
+"enter"="Enter";
+"logout_info"="Are you sure to logout?";
+
+"周一"="Mon";
+"周二"="Tue";
+"周三"="Wed";
+"周四"="Thu";
+"周五"="Fri";
+"周六"="Sat";
+"周日"="Sun";
+
+"range_low"="Low";
+"range_normal"="Nor.";
+"range_high"="High";
+
+"measure"="Measure";
+"m_weight"="Weight";
+"m_step"="Step";
+"m_fat"="Fat";
+"m_muscle"="Muscle";
+"m_water"="Water";
+"m_basic"="BMR";
+"m_bone"="Bone";
+"m_bmi"="BMI";
+"m_visceralfat"="VisceralFat";
+"m_height"="Height";
+"m_bodyage"="BodyAge";
+"m_wc"="WC";
+"m_hc"="HC";
+
+"少年"="Young";
+"青年"="Strong";
+"中年"="Middle";
+"老年"="Old";
+
+"m_fat_info"="Fat rate refers to the ratio of fat in body composition, fat rate than simply measurement weight can reflect our more body fat levels.";
+"m_muscle_info"="Muscle content is according to the human body muscle and the body weight, total height is combined to get a percentage value, such as this value is decided to a person's physical health and strength.";
+"m_water_info"="Body moisture percentage of weight, this data and muscle mass have extremely close relations, can the indicator weight loss method is correct.";
+"m_basic_info"="Basal metabolism is to maintain the minimum energy required for normal human body life activity, the higher the basal metabolism, the more calories a day, also is not easy get fat.";
+"m_bone_info"="Bone mass per unit volume, refers to the content of bone tissue bone mineral and bone matrix and bone mass on behalf of the people to bone health.";
+"m_bmi_info"="BMi is to use weight in kilograms divided by the square of height figures, are commonly used to measure the body fat international degree and whether a standard of health.";
+"m_visceralfat_info"="Visceral fat is a kind of body fat, unlike subcutaneous fat, it around the body organs, mainly exists in the abdominal cavity. High levels of visceral fat likely hyperlipidemia and other complications.";
+"m_bodyage_info"="Physiological age refers to the personal physiological age, level of the biological age are mainly depends on people's way of life and health.";
+
+"user_agreement"="1";
+"user_agreement_title"="User Agreement";
+
+"target_weight"="TargetWeight";
+"target_distance"="to achieve your target weight";
+"target_set"="set target";
+
+"profile_title"="Profile";
+"profile_age"="Age";
+"profile_height"="Height";
+"profile_sex"="Sex";
+"profile_male"="Male";
+"profile_hc"="HC";
+"profile_wc"="WC";
+"profile_female"="Female";
+"男"="Male";
+"Male"="Male";
+"女"="Female";
+"Female"="Female";
+
+"editpwd_title"="EditPassword";
+"editpwd_newpwd"="NewPwd";
+"editpwd_confirmpwd"="ComPwd";
+"editpwd_confirmpwdinfo"="please input new password again";
+"editpwd_newpwdinfo"="please input new password";
+
+"account_register"="Register";
+"account_login"="Login";
+"account_email"="Email";
+"account_pwd"="Pwd";
+"account_inputemail"="Email";
+"account_inputpwd"="EnterPwd";
+"account_enterpwd"="ComPwd";
+"account_emailinfo"="please input email";
+"account_pwdinfo"="please input password";
+"account_confirmpwdinfo"="please input password again";
+"account_erremail"="Please enter right email";
+"account_errpwd"="Please enter the password for 6 to 18";
+
+"register_errpwd"="Please enter the password for 6 to 18";
+"register_errconfirmpwd"="Please enter the password for 6 to 18";
+"register_errtwopwd"="The two passwords don't match";
+
+"findpwd_title"="FindPassword";
+"findpwd_info"="Send Password to Email";
+"findpwd_errmail"="Please enter right email";
+
+"title_unitsetup" = "UnitSetup";
+"login_noti"="The measure is temporary data, you will not cloud storage. Please login account, you permanently save measurement data.";
+"可选"="Optional";
+"已有账号"="Have an account, click Sign";
+"请填写"="Please input ";

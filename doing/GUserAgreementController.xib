@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GUserAgreementController">
+            <connections>
+                <outlet property="btnBack" destination="Gv1-QH-pbQ" id="3IE-i7-EIM"/>
+                <outlet property="btnBackIcon" destination="kWg-5T-OaM" id="L9v-Ch-hp9"/>
+                <outlet property="lblContent" destination="Tq1-Zt-W9O" id="kjW-dJ-Cyr"/>
+                <outlet property="lblContentEnglish" destination="0La-NJ-bU5" id="t1P-Oe-ord"/>
+                <outlet property="lblTopTitle" destination="dS8-e6-RIM" id="OqN-RC-0zv"/>
+                <outlet property="scrollView" destination="nZd-Bk-CZw" id="1tZ-xH-vXe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTop" destination="WK7-NE-fSc" id="gN6-Ru-3d2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view autoresizesSubviews="NO" contentMode="scaleToFill" id="WK7-NE-fSc" userLabel="ViewTop">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kWg-5T-OaM" userLabel="Button返回图标">
+                            <rect key="frame" x="14" y="35" width="9" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="guo_arrow_left_gray.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gv1-QH-pbQ" userLabel="Button返回">
+                            <rect key="frame" x="0.0" y="20" width="70" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="goback:" destination="-1" eventType="touchUpInside" id="uqG-cY-y9N"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户协议" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dS8-e6-RIM">
+                            <rect key="frame" x="118" y="20" width="84" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="nZd-Bk-CZw">
+                    <rect key="frame" x="0.0" y="71" width="320" height="478"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0La-NJ-bU5">
+                            <rect key="frame" x="34" y="154" width="198" height="112"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">
+This agreement is that you, symmetry client (hereinafter referred to as "the client") between the owners for the purpose of this contract concluded between the client service and other related matters, please carefully read the license agreement, you click on the "register" button, after this agreement is a legal document binding upon both parties.
+
+Article 1. Confirmation and acceptance of the terms of this client services
+1.1. The client's electronic services of ownership and operation rights shall be owned by the symmetry group. Users agree to the registration agreement and complete the registration process, to become the official user for the client. The user to confirm: the terms of this agreement the rights and obligations of both parties to a processing contract, always effective, otherwise mandatory law or otherwise agreed by both sides, according to its rules.
+1.2. User click agree to this agreement, be deemed to have been the user to confirm their have to enjoy the rights of the client service ability and behavior ability, independently bear legal responsibility.
+1.3. Symmetry in the mainland area of law enforcement of the law of the People's Republic of China decided to reject the service alone, close to the extent permitted user accounts, remove or edit content.
+
+Article 2. Our client service
+2.1. Well-balanced through the Internet to provide users with software and hardware in accordance with the interaction and the Internet information services, such as the user fully agree to this agreement and the provisions of this client, relevant party shall have the right to use the client service.
+2.2. The user must prepare the following equipment and undertake the following costs:
+(1), according to the body fat to the communication and data transmission between the client;
+(2) the Internet equipment, including but not limited to computers or other Internet terminals, modems and other necessary Internet access device;
+(3) the Internet costs, including but not limited to fixed network, Internet equipment rental, mobile phone traffic fee, etc.
+
+Article 3 the user information
+3.1. The user should be on their own credit registration information provided to the client, the user agrees to provide the registered information is true, accurate, complete, legal and effective, and of any change of user registration information, should be timely update the registered information. If the user to provide registration information is illegal, untrue, inaccurate, not exhaustive, users must therefore cause the corresponding responsibility and consequences, and well-balanced reserves the right to end users using symmetrical services.
+3.2. Users in the use of the client, the user's real name/contact name, address, telephone, email and other private information, the client will be strictly confidential, unless authorized by users or otherwise provided by law, the client will not disclosed to the outside world of user privacy information.
+3.3. After the success of the user registration, will produce the account information such as user name and password, you can change your password according to the provisions of this client. Users should be careful to reasonable storage, use the user name and password. If users find any illegal use of user accounts or the existence of security vulnerabilities, please immediately notify the client and report to the public security organ.
+3.4. The user agrees to, well-balanced with via email, text messaging, telephone and other forms, to this client registered users to send orders, purchase information, such as promotions told that information right.
+
+Article 4 the ownership and intellectual property rights clause
+4.1. Symmetry is the producer of client, is this client content and resources of the copyright and other legal rights, protected by state laws, has the right to this agreement from time to time and modify the client's content, and posted on the client, without further notice user. Within the scope of the maximum permitted by law, symmetry to this agreement and the content of the client has the power of interpretation.
+4.2. Except as otherwise mandatory provisions in the law, without symmetry explicit special written permission, no unit or individual shall be compelled in any manner illegally copied, reproduced in whole or in part, quotes, links, grab, or otherwise use this client information content, otherwise, the symmetry has right to pursue its legal responsibility.
+
+Article 5 the limitation of liability and does not guarantee
+5.1 unless expressly written instructions of the client and the contained or in other ways by the client to provide you all the information, content, materials and products (including software) and services, all is in "according to the status quo" and "according to the existing" on the basis of the offer. Unless expressly written instructions, well-balanced wrong this client operations and contains information on the client, content, materials (including software), product or service of any kind, express or implied in the statement or guarantee (unless otherwise stipulated according to the laws of the People's Republic of China).
+5.2 fit all information is for reference only, not a substitute for doctors and other medical staff Suggestions, such as to use the client data deviation, symmetry is not responsible for, also not take any legal responsibility.
+5.3 whether adopt symmetrical opinions and Suggestions for users' individual behavior, symmetry is not liable for any possible.
+
+Article 6 the protocol updates and user attention obligation
+According to the requirements of national laws and regulations change and network operations symmetry shall have the right to modify this agreement from time to time, the revised agreement shall become effective once they are posted on the client, and instead of the original agreement. The user can log in access to the latest agreement at any time; Users have a duty to concern from time to time and read the latest version of the agreement and client announcement. If the user does not agree with the updated agreement, can and should immediately stop accepting this client on the basis of the services provided in this agreement; Such as users continue to use the services provided by the client, be deemed to have agreed to the updated agreement. Symmetry is recommended that you read this agreement before using this client and the client's announcement.
+
+Article 7 jurisdiction and applicable law
+This agreement conclude, execution, and explain and solve the dispute shall be applicable in the mainland of the People's Republic of China apply effective legal (but not including its conflict rules). There is any conflict with the applicable law of this agreement, these terms will completely reinterpreted as stipulated in the law, and other effective provisions shall remain valid. As the parties to this agreement or any dispute in its execution, both sides should try to amicably settled through negotiation. If consultation fails, any party can to the jurisdiction of the court in the locality of the symmetry operators.
+
+Article 8 the other
+Symmetry respect for users and consumers' legal rights, and this agreement and all kinds of rules, posted on the client statement and other content, all is in order to better and more convenient to provide services for users and consumers. This client welcome users and put forward opinions and Suggestions from all walks of life, the proportion will accept and timely to modify this agreement and the various rules of the client.
+
+</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tq1-Zt-W9O">
+                            <rect key="frame" x="34" y="8" width="198" height="112"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">
+本协议是您与匀称客户端（简称“本客户端”）所有者之间就本客户端服务等相关事宜所订立的契约，请您仔细阅读本注册协议，您点击“注册”按钮后，本协议即构成对双方有约束力的法律文件。
+
+第1条 本客户端服务条款的确认和接纳
+1.1. 本客户端的各项电子服务的所有权和运作权归匀称团队所有。用户同意所有注册协议条款并完成注册程序，才能成为本客户端的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。
+1.2. 用户点击同意本协议的，即视为用户确认自己具有享受本客户端服务的权利能力和行为能力，能够独立承担法律责任。
+1.3. 匀称保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容的权利。
+
+第2条 本客户端服务
+2.1. 匀称通过互联网依法为用户提供软硬件交互以及互联网信息等服务，用户在完全同意本协议及本客户端规定的情况下，方有权使用本客户端的相关服务。
+2.2. 用户必须自行准备如下设备和承担如下开支：
+（1）体脂称，能与本客户端之间进行通信和数据传输；
+　　（2）上网设备，包括并不限于电脑或者其他上网终端、调制解调器及其他必备的上网装置；
+　　（3）上网开支，包括并不限于网络接入费、上网设备租用费、手机流量费等。
+
+第3条 用户信息
+3.1. 用户应自行诚信向本客户端提供注册资料，用户同意其提供的注册资料真实、准确、完整、合法有效，用户注册资料如有变动的，应及时更新其注册资料。如果用户提供的注册资料不合法、不真实、不准确、不详尽的，用户需承担因此引起的相应责任及后果，并且匀称保留终止用户使用匀称各项服务的权利。
+3.2. 用户在使用本客户端时，涉及用户真实姓名/名称、通信地址、联系电话、电子邮箱等隐私信息的，本客户端将予以严格保密，除非得到用户的授权或法律另有规定，本客户端不会向外界披露用户隐私信息。
+3.3. 用户注册成功后，将产生用户名和密码等账户信息，您可以根据本客户端规定改变您的密码。用户应谨慎合理的保存、使用其用户名和密码。用户若发现任何非法使用用户账号或存在安全漏洞的情况，请立即通知本客户端并向公安机关报案。
+3.4. 用户同意，匀称拥有通过邮件、短信、电话等形式，向在本客户端注册、购买的用户发送订单信息、促销活动等告知信息的权利。
+
+
+第4条 所有权及知识产权条款
+
+4.1. 匀称是本客户端的制作者，拥有此客户端内容及资源的著作权等合法权利，受国家法律保护，有权不时地对本协议及本客户端的内容进行修改，并在本客户端张贴，无须另行通知用户。在法律允许的最大限度范围内，匀称对本协议及本客户端内容拥有解释权。
+4.2. 除法律另有强制性规定外，未经匀称明确的特别书面许可，任何单位或个人不得以任何方式非法地全部或部分复制、转载、引用、链接、抓取或以其他方式使用本客户端的信息内容，否则，匀称有权追究其法律责任。
+
+
+第5条 责任限制及不承诺担保
+5.1 除非另有明确的书面说明，本客户端及其所包含的或以其它方式通过本客户端提供给您的全部信息、内容、材料、产品（包括软件）和服务，均是在“按现状”和“按现有”的基础上提供的。除非另有明确的书面说明，匀称不对本客户端的运营及其包含在本客户端上的信息、内容、材料、产品（包括软件）或服务作任何形式的、明示或默示的声明或担保（根据中华人民共和国法律另有规定的以外）。
+
+5.2 匀称所有信息仅供参考，不能替代医生和其他医务人员的建议，如自行使用本客户端中资料发生偏差，匀称概不负责，亦不负任何法律责任。
+
+5.3 是否采用匀称的意见和建议为使用者个人行为，匀称不承担任何可能产生的责任。
+
+第6条 协议更新及用户关注义务
+　　根据国家法律法规变化及网络运营需要，匀称有权对本协议条款不时地进行修改，修改后的协议一旦被张贴在本客户端上即生效，并代替原来的协议。用户可随时登陆查阅最新协议；用户有义务不时关注并阅读最新版的协议及客户端公告。如用户不同意更新后的协议，可以且应立即停止接受本客户端依据本协议提供的服务；如用户继续使用本客户端提供的服务，即视为同意更新后的协议。匀称建议您在使用本客户端之前阅读本协议及本客户端的公告。
+
+第7条 法律管辖和适用
+　　本协议的订立、执行和解释及争议的解决均应适用在中华人民共和国大陆地区适用之有效法律（但不包括其冲突法规则）。如发生本协议与适用之法律相抵触时，则这些条款将完全按法律规定重新解释，而其它有效条款继续有效。如缔约方就本协议内容或其执行发生任何争议，双方应尽力友好协商解决；协商不成时，任何一方均可向有管辖权的匀称经营主体所在地法院提起诉讼。
+
+第8条 其他
+匀称尊重用户和消费者的合法权利，本协议及本客户端上发布的各类规则、声明等其他内容，均是为了更好的、更加便利的为用户和消费者提供服务。本客户端欢迎用户和社会各界提出意见和建议，匀称将虚心接受并适时修改本协议及本客户端的各类规则。 
+
+</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="guo_arrow_left_gray.png" width="16" height="29"/>
+    </resources>
+</document>

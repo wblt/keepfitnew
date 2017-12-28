@@ -1,0 +1,196 @@
+
+"auth_network_no"=" Keine Netzwerkverbindung - ah";
+"auth_phone_err"=" Telefonnummer falsch -Format";
+"auth_pwd_err"=" Passwort falsch - Format (6-18 stellige alphanumerische )";
+"auth_pwd_empty"=" Bedarf Passwort - Format (6-18 stellige alphanumerische )";
+"auth_getauthcode"="Code Eingabe";
+"auth_service_wrong"=" Server fehlgeschlagen ~";
+
+"同步中"="synchronous";
+
+"用户隐私"="Datenschutz";
+
+"身体年龄Unit"="Jahr";
+"身高Unit"="cm";
+"体重Unit"="kg";
+"脂肪Unit"="%";
+"基础代谢Unit"="kcal";
+"水分Unit"="%";
+"BMIUnit"="";
+"肌肉Unit"="%";
+"骨量Unit"="%";
+"内脏脂肪Unit"="";
+"步行Unit"="";
+"步行路程Unit"="km";
+"步行耗能Unit"="kcal";
+"步行时间Unit"="Minute";
+
+"project_label"="Klicken Sie auf den Schnitt, sortiert nach Länge mobil";
+
+"title_project"="Projektmanagement";
+"title_measure"="Messen";
+"title_step"="Pedometer";
+"title_analysis"="Analyse";
+"title_me"="Ich";
+"title_setting"="Einrichten";
+"title_login"="einloggen";
+"title_register"="Anmeldung";
+"title_profile"="Profil";
+"title_editpwd"="Kennwort ändern";
+"title_logout"="ausloggen";
+"title_useragreement"="Benutzervereinbarung";
+"title_updatehealth"="ADHS";
+"title_measurelist"="Maßliste";
+"login_error"="Konto Passwort Fehler";
+"密码修改成功"="Passwort erfolgreich geändert";
+
+"step_km"="Kilometer";
+"step_time"="Minute";
+"step_todaystep"="Tagesschritte";
+"step_target"="Ziel";
+"step_unit"="Schritt";
+"step_finish"="komplett";
+
+"analysis_week"="Woche";
+"analysis_month"="Monat";
+"analysis_all"="Alle";
+"analysis_avg"="Durchschnitt";
+"analysis_toweek"=" Letzte Woche";
+"analysis_tomonth"="Letzten Monat";
+"analysis_toyear"=" Letztes Jahr";
+"analysis_lowest"="am wenigsten";
+"analysis_most"="höchste";
+"analysis_total"="gesamt";
+
+/*
+"weightlist_year"="Jahr";
+"weightlist_month"="Monat";
+"weightlist_day"="Tag";
+ */
+"weightlist_year"="-";
+"weightlist_month"="-";
+"weightlist_day"="";
+"weightlist_cancle"="annulliert";
+"weightlist_ok"="bestimmen";
+"weightlist_deleteinfo"=" Daten löschen ";
+
+"bodyfat_bodyfat"="Körperfett";
+"bodyfat_attention"="Vorsicht Körperfett ";
+"bodyfat_item"="Körperfett Artikel";
+
+"weight_todayweight"="Heute";
+
+"cancle"="annulliert";
+"quit"="verlassen";
+"finish"="komplett";
+"enter"="bestimmen";
+"logout_info"="ausloggen";
+
+"周一"="MO";
+"周二"="DIE";
+"周三"="MI";
+"周四"="DO";
+"周五"="FR";
+"周六"="SA";
+"周日"="SO";
+
+"range_low"="niedrig";
+"range_normal"="normal";
+"range_high"="hoch";
+
+"measure"="messen";
+"m_weight"="Gewicht";
+"m_step"="Gehen";
+"m_fat"="Fett";
+"m_muscle"="Muskel";
+"m_water"="Wasser";
+"m_basic"="GU";
+"m_bone"="KM";
+"m_bmi"="BMI";
+"m_visceralfat"="VF";
+"m_height"="Höhe";
+"m_bodyage"="Körper Alter";
+"m_wc"="Taille";
+"m_hc"="Hüften";
+
+"身体年龄"="Körper Alter";
+"身高"="Höhe";
+"体重"="Gewicht";
+"脂肪"="Fett";
+"基础代谢"="GU";
+"水分"="Wasser";
+"BMI"="BMI";
+"肌肉"="Muskel";
+"骨量"="KM";
+"内脏脂肪"="VF";
+"步行"="Gehen";
+"步行路程"="Strecke";
+"步行耗能"="GE";
+"步行时间"="GZ";
+
+"少年"="Jung";
+"青年"="Jugend";
+"中年"="MA";
+"老年"="Alten";
+
+"m_fat_info"="Körperfett -Anteil bezieht sich auf die Komponenten, um den Anteil des Fettgewebes. Messfettanteil als einfaches Messen des Körpergewichts nur besser zu reflektieren die Menge an Fett in unserem Körper.";
+"m_muscle_info"="Körpergewicht unterteilt in nicht-Fettbestandteile und Fettsubstanzen beiden am Material, non-muscle Gehalt an Fettsubstanzen entfernt etwa 4% bis 6 Gewichts-% anorganisch. Muscle ist eine gute Sache ist, desto größer die Muskelmasse , desto höher Grundumsatz selbst, desto mehr Fett ist nicht einfach.";
+"m_water_info"="Körperwasseranteil des gesamten Körpergewichts , Muskelmasse , und diese Daten hat eine sehr enge Beziehung, weil Muskel große Mengen an Wasser (etwa 70%) enthält, kann dieser Indikator spiegeln die richtige Art und Weise, Gewicht zu verlieren, wenn die Rate der Abnahme in den Körper von Wasser, nicht nur Verlust der Gesundheit, aber wird der Körperfettanteil steigt machen.";
+"m_basic_info"="Grundumsatz ist die normalen Aktivitäten des menschlichen Lebens die minimale tägliche Bedarf an Energie zu erhalten, sagte der populäre Punkt ist ein 'Gemüse' Tag im Leben des Energieverbrauchs (nicht essen ist nicht eines Tages trinken Tang Chuangshang Energie verbraucht bewegen).";
+"m_bone_info"="Bei vielen Menschen verwenden, um die Menge an Knochenskelett zu beschreiben und darzustellen, insbesondere die Dicke der Extremitätenknochen . Wenn Sie die Knochenmasse im engeren Sinne Sicht unabhängig von einem Vertebraten zu folgen, sondern auch, ob sie alt oder weniger ist, ist die Menge an Knochen sehr wichtig. Im Namen ihrer Knochenmasse im Fall von Knochengesundheit .";
+"m_bmi_info"="BMI ist das Gewicht in Kilogramm geteilt durch Körpergröße in Metern resultierende Zahl quadriert, wird häufig verwendet das Niveau von Körperfett , dünne internationalen und ob eine Standard-Gesundheit zu messen. ";
+"M_visceralfat_info" = "viszerale Fett ist der Körper Fett in einem, und subkutanem Fett (das heißt, kann man das Gefühl bekommen, was wir in der Regel den Körper verstehen' Fett ') unterschiedlich ist, dreht es sich um menschliche Organe, vor allem in intra-abdominalen viszerale Fett auf unsere Gesundheit ist wichtig.";
+"m_bodyage_info"="Eine geringere Körperfettanteil , desto höher ist der Grundumsatz , desto weniger ihren Körper Alter. Älter als das tatsächliche Alter des Körpers, veranschaulicht auch die Ansammlung von Fett in der Grundstoffwechsel langsam ist, der Körper (einschließlich der internen und externen Funktion der Haut) Alterung beschleunigt.";
+
+"target_weight"="Zielgewicht";
+"target_distance"="Entfernung zum Ziel und";
+"target_set"="Ziele setzen";
+
+"user_agreement"="3";
+"user_agreement_title"="Benutzervereinbarung";
+
+"profile_title"="Profil";
+"profile_age"="Alter";
+"profile_height"="Grösse";
+"profile_sex"="Geschlecht";
+"profile_hc"="Taille";
+"profile_wc"="Hüfte";
+"profile_male"="männlich";
+"profile_female"="weiblich";
+"男"="männlich";
+"Male"="männlich";
+"女"="weiblich";
+"Female"="weiblich";
+
+"editpwd_title"="Kennwort ändern";
+"editpwd_newpwd"="Neues Passwort";
+"editpwd_confirmpwd"="Passwort wiederholen";
+"editpwd_confirmpwdinfo"="Wiederholen Sie Ihr neues Passwort";
+"editpwd_newpwdinfo"="Bitte geben Sie ein neues Passwort";
+
+"account_register"="Anmeldung";
+"account_login"="einloggen";
+"account_email"="Briefkasten";
+"account_pwd"="Kennwort";
+"account_inputemail"="Briefkasten";
+"account_inputpwd"="Geben Sie das Kennwort";
+"account_enterpwd"="Passwort bestätigen";
+"account_emailinfo"="Bitte geben Sie die E-Mail";
+"account_pwdinfo"="Bitte geben Sie Ihr Passwort";
+"account_confirmpwdinfo"="Geben Sie erneut das Kennwort";
+"account_erremail"="Bitte geben Sie die E-Mail";
+"account_errpwd"="Bitte geben Sie eine 6-18 stelliges Passwort";
+
+"register_errpwd"="Bitte geben Sie ein Passwort 6-18 Ziffern oder Buchstaben";
+"register_errconfirmpwd"="Passwort bestätigen Bitte geben Sie 6-18 Ziffern oder Buchstaben";
+"register_errtwopwd"="Die beiden Passwörter stimmen nicht überein";
+
+"findpwd_title"="Passwort vergessen";
+"findpwd_info"="Das Passwort wird an die Mailbox gesendet";
+"findpwd_errmail"="Bitte geben Sie eine gültige E-Mail adresse";
+
+"title_unitsetup" = "GeräteeInstellungen";
+"login_noti"="Die Maßnahme ist temporäre Daten, werden Sie nicht Storage Cloud. Bitte melden Sie Konto, Sie permanent Messdaten speichern.";
+"可选"="fakultativ";
+"已有账号"="Haben Sie ein Konto, klicken Sie auf Anmelden";
+"请填写"="Please input ";

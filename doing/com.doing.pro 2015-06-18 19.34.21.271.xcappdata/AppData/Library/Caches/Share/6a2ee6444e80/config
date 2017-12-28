@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>sskConvertUrl</key>
+	<true/>
+	<key>sskDiffTimeInterval</key>
+	<real>0.079987049102783203</real>
+	<key>sskSSO</key>
+	<true/>
+	<key>sskStartLogTime</key>
+	<real>1434625762.330442</real>
+	<key>sskStat</key>
+	<true/>
+	<key>sskStatDev</key>
+	<true/>
+	<key>sskStatShare</key>
+	<true/>
+	<key>sskStatUser</key>
+	<true/>
+</dict>
+</plist>

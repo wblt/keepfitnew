@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CommonSSOQZoneSchema</key>
+	<string>mqzone</string>
+	<key>CommonSSo</key>
+	<integer>1</integer>
+	<key>CommonSSoQZoneVersion</key>
+	<string>3.6.8</string>
+	<key>ConfigTimeFrequency</key>
+	<real>1</real>
+	<key>ConfigTimeStamp</key>
+	<real>1434625765.1676421</real>
+	<key>DataReportEnable</key>
+	<real>1</real>
+	<key>SafariEnable</key>
+	<true/>
+	<key>WebViewEnable</key>
+	<true/>
+</dict>
+</plist>

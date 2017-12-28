@@ -1,0 +1,205 @@
+
+"auth_network_no"="Geen netwerkverbinding";
+"auth_phone_err"="Verkeerd telefoonnummer format";
+"auth_pwd_err"="Verkeerd wachtwoord format (6-18 alfanumerieke tekens)";
+"auth_pwd_empty"="Wachtwoord kan niet leeg zijn";
+"auth_getauthcode"="Klik hier voor de code";
+"auth_service_wrong"="Server problemen";
+
+"同步中"="synchronous";
+
+"用户隐私"="Gebruiker Privacy";
+
+"身体年龄"="LL";
+"身高"="Lengte";
+"体重"="Gewicht";
+"脂肪"="Vet";
+"基础代谢"="BM";
+"水分"="Vocht";
+"BMI"="BMI";
+"肌肉"="Spieren";
+"骨量"="Botten";
+"内脏脂肪"="VV";
+"步行"="Lopen";
+"步行路程"="LA";
+"步行耗能"="LE";
+"步行时间"="LT";
+
+"身体年龄Unit"="jaren";
+"身高Unit"="cm";
+"体重Unit"="kg";
+"脂肪Unit"="%";
+"基础代谢Unit"="kcal";
+"水分Unit"="%";
+"BMIUnit"="";
+"肌肉Unit"="%";
+"骨量Unit"="%";
+"内脏脂肪Unit"="";
+"步行Unit"="";
+"步行路程Unit"="km";
+"步行耗能Unit"="kcal";
+"步行时间Unit"="Minuut";
+
+"project_label"="Klik om een project in te voegen of te verwijderen door lang in te drukken en te slepen";
+
+"title_project"="project management";
+"title_measure"="Metingen";
+"title_step"="Stappenteller";
+"title_analysis"="Analyse";
+"title_me"="IK";
+"title_setting"="Instelling";
+"title_login"="Log in";
+"title_register"="registratie";
+"title_profile"="profiel";
+"title_editpwd"="Wachtwoord wijzigen";
+"title_logout"="uitloggen";
+"title_useragreement"="gebruikers overeenkomst";
+"title_updatehealth"="AHDS";
+"title_measurelist"="meting lijst";
+"login_error"="Account password error";
+"密码修改成功"="Wachtwoordmet succes gewijzigd";
+
+"step_km"="kilogram";
+"step_time"="Minuut";
+"step_todaystep"="SV";
+"step_target"="doelwit";
+"step_unit"="stappen";
+"step_finish"="gereed";
+
+"analysis_week"="Week";
+"analysis_month"="Maand";
+"analysis_all"="Alle";
+"analysis_avg"="gemiddeld";
+"analysis_toweek"=" vorige week";
+"analysis_tomonth"="vorige maand";
+"analysis_toyear"=" vorig jaar";
+"analysis_lowest"="laagste";
+"analysis_most"="hoogste";
+"analysis_total"="totaal";
+
+/*
+"weightlist_year"="jaar";
+"weightlist_month"="maand";
+"weightlist_day"="dag";
+ */
+"weightlist_year"="-";
+"weightlist_month"="-";
+"weightlist_day"="";
+"weightlist_cancle"="annuleren";
+"weightlist_ok"="ok";
+"weightlist_deleteinfo"="Verwijder meeting data";
+
+"bodyfat_bodyfat"="lichaamsvet";
+"bodyfat_attention"="attentie";
+"bodyfat_item"="item";
+
+"weight_todayweight"="gewicht vandaag";
+
+"cancle"="annuleren";
+"quit"="stoppen";
+"finish"="gereed";
+"enter"="invoeren";
+"logout_info"="afmelden";
+
+"周一"="MA";
+"周二"="DI";
+"周三"="WO";
+"周四"="DO";
+"周五"="VR";
+"周六"="ZA";
+"周日"="ZO";
+
+"range_low"="laag";
+"range_normal"="normaal";
+"range_high"="hoog";
+
+"measure"="Meting";
+"m_weight"="Gewicht";
+"m_step"="stappen";
+"m_fat"="Vet";
+"m_muscle"="Spieren";
+"m_water"="Vocht";
+"m_basic"="BM";
+"m_bone"="Botten";
+"m_bmi"="BMI";
+"m_visceralfat"="VV";
+"m_height"="Lengte";
+"m_bodyage"="LL";
+"m_wc"="taille";
+"m_hc"="heupen";
+
+"少年"="jongeren";
+"青年"="jeugd";
+"中年"="middelbare leeftijd";
+"老年"="ouderen";
+
+
+"m_fat_info"="Vetpercentage verwijst naar de componenten, de hoeveelheid vetweefsel. Het meten van vetpercentage en het meten van het lichaamsgewicht kan een betere afspiegeling geven van de hoeveelheid vet in ons lichaam.";
+
+"m_muscle_info"="Lichaamsgewicht verdeeld in vetvrije bestanddelen en vetstoffen zijn twee componenten, niet-spier van vetstoffen verwijderd ongeveer 4% tot 6% van anorganisch gewixht. Spier is goed, hoe groter de spiermassa, hoe hoger basaal metabolisme, meer vet is niet eenvoudig.";
+
+"m_water_info"="Lichaamsvocht percentage van het totale lichaamsgewicht, spiermassa en deze gegevens heeft een zeer nauwe relatie, omdat de spieren grote hoeveelheden vocht bevatten (ongeveer 70%). Deze indicator geeft op de juiste manier weer om gewicht te verliezen. Het tempo van vochtverlies in het lichaam is niet alleen verlies van gezondheid, maar zal het percentage lichaamsvet doen stijgen.";
+
+"m_basic_info"="Basaal metabolisme heeft bij normale activiteiten van het menselijk lichaam een minimale dagelijkse behoefte aan energie Een populaire punt is: een 'plantaardige' dag in het leven van energieverbruik (een dag niet eten en drinken  verbruikte energie bewegen).";
+
+"m_bone_info"="De botmassa van veel mensen geeft de hoeveelheid bot van het skelet aan, in het bijzonder de dikte van de ledematen botten. Als de botmassa in de strikte zin oogpunt, ongeacht de gewervelde volgen, maar ook of zij oud zijn, de hoeveelheid bot is belangrijk. Namens hun botmassa in het geval van de gezondheid van de botten.";
+
+"m_bmi_info"="BMI is het gewicht in kilogrammen gedeeld door de lengte in het kwadraat. Dit wordt vaak gebruikt om het niveau van lichaamsvet tedgezondheidscertificaat meten.";
+
+"M_visceralfat_info" = "Visceraal vet in één het lichaamvet en onderhuids vet (dat wil zeggen, je kunt het aanraken op wat we meestal begrijpen het lichaam om 'vet' te krijgen), het draait om menselijke organen, vooral in de buikholte. Visceraal vet op onze gezondheid is belangrijk.";
+
+"m_bodyage_info"="Een Hoe lager het vetpercentage, een hoger basaal metabolisme, geeft een lagere lichaamsleeftijd. Wanneer je lichaamsleeftijd ouder is dan je werkelijke leeftijd, dat illustreert de ophoping van vet en het basale metabolisme is traag, het lichaam (inclusief de interne en externe werking van de huid) versnelt veroudering.";
+
+
+"target_weight"="Streefgewicht";
+"target_distance"="Afstand tot het doel";
+"target_set"="Stel uw doel in";
+
+"user_agreement"="2";
+"user_agreement_title"="Gebruikers Overeenkomst";
+
+"profile_title"="gebruikersprofiel";
+"profile_age"="leeftijd";
+"profile_height"="lengte";
+"profile_sex"="geslacht";
+"profile_hc"="taille";
+"profile_wc"="heupen";
+"profile_male"="mannelijk";
+"profile_female"="vrouw";
+"男"="man";
+"Male"="man";
+"女"="vrouw";
+"Female"="vrouw";
+
+"editpwd_title"="Wachtwoord wijzigen";
+"editpwd_newpwd"="nieuw wachtwoord";
+"editpwd_confirmpwd"="bevestig wachtwoord";
+"editpwd_confirmpwdinfo"="Herhaal uw nieuwe wachtwoord";
+"editpwd_newpwdinfo"="Vul een nieuw wachtwoord in";
+
+"account_register"="Registratie";
+"account_login"="Log in";
+"account_email"="e-mail";
+"account_pwd"="wachtwoord";
+"account_inputemail"="Vul uw e-mailadres in";
+"account_inputpwd"="Voer het wachtwoord in";
+"account_enterpwd"="Bevestig wachtwoord";
+"account_emailinfo"="Vul uw e-mailadres in";
+"account_pwdinfo"="Vul hier uw wachtwoord in";
+"account_confirmpwdinfo"="Voer het wachtwoord opnieuw in";
+"account_erremail"="Vul uw e-mailadres in";
+"account_errpwd"="Vul een wachtwoord van 6-18 tekens in";
+
+"register_errpwd"="Voer een wachtwoord van 6-18 cijfers of letters in";
+"register_errconfirmpwd"="Bevestig wachtwoord, vul 6-18 cijfers of letters in";
+"register_errtwopwd"="De twee wachtwoorden komen niet overeen";
+
+"findpwd_title"="wachtwoord vergeten";
+"findpwd_info"="Het wachtwoord zal worden verstuurd naar de e-mailbox";
+"findpwd_errmail"="Vul een geldig e-mail";
+
+"title_unitsetup" = "UnitInstellingen";
+"login_noti"="De maatregel is tijdelijk data, zult u niet storage cloud. Gelieve in te loggen rekening, u permanent meetgegevens op te slaan.";
+"可选"="facultatief";
+"已有账号"="Heeft u een account, klik op Aanmelden";
+"请填写"="Please input ";

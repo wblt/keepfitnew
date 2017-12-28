@@ -1,0 +1,302 @@
+
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import <ImageIO/ImageIO.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+//添加预编译
+
+#import "InternationalModule.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "NVDate.h"
+#import "AppDelegate.h"
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+#import "ASIHTTPRequestDelegate.h"
+#import "ASIHTTPRequestConfig.h"
+#import "DefaultConst.h"
+#import "XWCategory.h"
+#import "JSONKit.h"
+#import "Dialog.h"
+#import "PublicModule.h"
+#import "AuthCommonViewController.h"
+#import "NetworkModule.h"
+#import "PublicModule.h"
+#import "DbModel.h"
+#import "UserInfo.h"
+#import "OpenSource/Reachability.h"
+#import "MJRefresh.h"
+#import "UIScrollView+MJRefresh.h"
+#import "Utils/ASIHTTPRequest/ASIDownloadCache.h"
+#import <sys/utsname.h>
+#import "AFNetworkReachabilityManager.h"
+#import "AFNetworking.h"
+#import "LCActionSheet.h"
+
+#endif
+
+
+#define NAVBAR_HEIGHT 64.f
+#define TABBAR_HEIGHT 49.f
+
+#define LCTLocalizedString(key, comment) [[InternationalModule bundle] localizedStringForKey:key value:@"" table:nil]
+
+#define SCREEN_WIDTH          [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT         [[UIScreen mainScreen] bounds].size.height
+#define DDCOMPONENT_BOTTOM          CGRectMake(0, (SCREEN_HEIGHT - NAVBAR_HEIGHT) + NAVBAR_HEIGHT, SCREEN_WIDTH, 216)
+//#define DDINPUT_BOTTOM_FRAME        CGRectMake(0, (SCREEN_HEIGHT - NAVBAR_HEIGHT) - self.chatInputView.frame.size.height + NAVBAR_HEIGHT,SCREEN_WIDTH,self.chatInputView.frame.size.height)
+#define DDINPUT_BOTTOM_FRAME        CGRectMake(0,SCREEN_HEIGHT,SCREEN_WIDTH,self.chatInputView.frame.size.height)
+#define DDINPUT_HEIGHT              self.chatInputView.frame.size.height
+#define DDINPUT_TOP_FRAME           CGRectMake(0, (SCREEN_HEIGHT - NAVBAR_HEIGHT) - self.chatInputView.frame.size.height + NAVBAR_HEIGHT - 216, SCREEN_WIDTH, self.chatInputView.frame.size.height)
+#define DDUTILITY_FRAME             CGRectMake(0, (SCREEN_HEIGHT - NAVBAR_HEIGHT) + NAVBAR_HEIGHT -216, SCREEN_WIDTH, 216)
+#define DDEMOTION_FRAME             CGRectMake(0, (SCREEN_HEIGHT - NAVBAR_HEIGHT) + NAVBAR_HEIGHT-216, SCREEN_WIDTH, 216)
+
+
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:1.0]
+
+//#define BtnTitleColorUnselect  [UIColor colorWithRed:201/255.0 green:201/255.0 blue:202/255.0 alpha:1.0f]
+#define BtnTitleColorUnselect  [UIColor colorWithRed:170/255.0 green:170/255.0 blue:170/255.0 alpha:1.0f]
+#define BtnColorEnable   [UIColor colorWithRed:34/255.0 green:172/255.0 blue:56/255.0 alpha:1.0f]
+
+#define NavColor  [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0f]
+#define CommonBgColor  [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1.0f]
+
+#define is_iPhone5                  ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define IS_IPHONE_5                 (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)568) < DBL_EPSILON)
+#define is_iPhone6                 ([[UIScreen mainScreen] bounds].size.width == 375)
+#define is_iPhone6P                 ([[UIScreen mainScreen] bounds].size.width == 414)
+#define IntergerToString(num)       [NSString stringWithFormat:@"%d", num]
+
+#define init_xib(x, y)	[[x alloc]initWithNibName:y bundle:nil];
+#define  PUSH(x)		[self.navigationController pushViewController : (x)animated : YES]
+
+#define POP				[self.navigationController popViewControllerAnimated:YES]
+
+#define DEVICE_OS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+
+#define SCC_DELTA_Y (DEVICE_OS_VERSION >= 7.0f? 20.0f : 0.0f)
+
+#define SWITCH_SHOW_FOCUSVIEW_UNTIL_FOCUS_DONE      0   //对焦框是否一直闪到对焦完成
+
+#define SWITCH_SHOW_DEFAULT_IMAGE_FOR_NONE_CAMERA   1   //没有拍照功能的设备，是否给一张默认图片体验一下
+
+//height
+#define CAMERA_TOPVIEW_HEIGHT   35  //title
+#define CAMERA_MENU_VIEW_HEIGH  44  //menu
+
+#define iPhone5FontSizeTitle    16
+#define iPhone5FontSizeName     14
+#define iPhone5FontSizeDiscuss  12
+#define iPhone5FontSizeTime     9
+
+#define iPhone6FontSizeTitle    17
+#define iPhone6FontSizeName     15
+#define iPhone6FontSizeDiscuss  13
+#define iPhone6FontSizeTime     10
+
+#define iPhone6PFontSizeTitle    18
+#define iPhone6PFontSizeName     16
+#define iPhone6PFontSizeDiscuss  14
+#define iPhone6PFontSizeTime     11
+
+#define LoginTypeDoing     @"0"
+#define LoginTypeQQ        @"1"
+#define LoginTypeWeibo     @"2"
+
+
+#define RespondSuccess     @"0"
+#define RespondDataNewest  @"1"
+#define RespondDataEmpty   @"2"
+#define RespondSessionError @"3"
+#define RespondSessionExpire @"4"
+#define RespondFailed      @"-1"
+#define RespondDataNon     @"-2"
+#define RespondJsonError   @"-3"
+#define RespondLackParam   @"-20"
+#define RespondLackOperation @"-100"
+#define RespondAccountNon   @"-201"
+#define RespondAccountNoPower @"-202"
+
+#define QiniuResSuccess  200
+#define QiniuResExpireToken 401
+
+#define RespondResult    @"result"
+#define RespondOperation @"operation"
+
+#define QiniuSquareToken      @"lTtnz5SeTx-B89CEeFH70w_xExx5FqvQGywG-rux:VuOKzUsZwcfTxh2b-DynF7n1ja4=:eyJzY29wZSI6IndlbnpoZW4iLCJkZWFkbGluZSI6MTQzMzMxNjM5NX0="
+#define QiniuHeadphotoToken   @"lTtnz5SeTx-B89CEeFH70w_xExx5FqvQGywG-rux:VuOKzUsZwcfTxh2b-DynF7n1ja4=:eyJzY29wZSI6IndlbnpoZW4iLCJkZWFkbGluZSI6MTQzMzMxNjM5NX0="
+
+#define NotiTrends   @"noti_trends"
+
+
+
+//color
+#define bottomContainerView_UP_COLOR     [UIColor colorWithRed:51/255.0f green:51/255.0f blue:51/255.0f alpha:1.f]       //bottomContainerView的上半部分
+#define bottomContainerView_DOWN_COLOR   [UIColor colorWithRed:68/255.0f green:68/255.0f blue:68/255.0f alpha:1.f]       //bottomContainerView的下半部分
+#define DARK_GREEN_COLOR        [UIColor colorWithRed:10/255.0f green:107/255.0f blue:42/255.0f alpha:1.f]    //深绿色
+#define LIGHT_GREEN_COLOR       [UIColor colorWithRed:143/255.0f green:191/255.0f blue:62/255.0f alpha:1.f]    //浅绿色
+#define CommonLineColor  [UIColor colorWithRed:217/255.0 green:217/255.0 blue:217/255.0 alpha:1.0f]
+#define LCTLineHeight  0.6f
+
+
+//对焦
+#define ADJUSTINT_FOCUS @"adjustingFocus"
+#define LOW_ALPHA   0.7f
+#define HIGH_ALPHA  1.0f
+
+
+#define ViewTagAddAlert  13
+#define VoiceAPPID       @"52b8ff7c"
+
+#define DIANPING_APP_KEY         @"01274325"
+#define DIANPING_APP_Secret       @"5cbd6af2c917409789eb0e6d87da5444"
+
+
+#define ServiceSquareMotherQuestion      @"http://appalpha.iygdy.com/gravidaApp_3/appIssueExecute"
+#define ServiceFortyYunqing       @"http://appalpha.iygdy.com/gravidaApp_3/getPregnancyCont"
+#define ServiceYunfuAlert         @"http://appalpha.iygdy.com/gravidaApp_3/appRemindExecute"
+#define  ServiceYunfuDiary        @"http://appalpha.iygdy.com/gravidaApp_3/appDiaryExecute"
+#define  ServiceAdult             @"http://appalpha.iygdy.com/gravidaApp_3/adultExecute"
+#define  ServiceBaby              @"http://appalpha.iygdy.com/gravidaApp_3/babyExecute"
+
+#define ServiceURL                @"http://appalpha.iygdy.com/gravidaApp_3/appDataExecute"
+#define ServiceSquerURL           @"http://appalpha.iygdy.com/gravidaApp_3/appSquareExecute"
+#define ServiceSquerUpdteURL      @"http://appalpha.iygdy.com/gravidaApp_3/updateSquareExecute"  /**< 修改模块 */
+#define ServiceSquareGetData      @"http://appalpha.iygdy.com/gravidaApp_3/downloadGravidaSuareData"
+#define ServiceAccountURL         @"http://appalpha.iygdy.com/gravidaApp_3/appAccountExecute"
+#define ServiceSetupURL           @"http://appalpha.iygdy.com/gravidaApp_3/setupExecute"
+#define ServiceQiniu              @"http://appalpha.iygdy.com/qiniu/ag_qiniu/getqiniutoken"
+#define ServiceZixun              @"http://appalpha.iygdy.com/gravidaApp_3/appSquareConsult"
+#define ServiceMission            @"http://appalpha.iygdy.com/gravidaApp_3/appMissionExecute"
+#define ServicePrize              @"http://appalpha.iygdy.com/gravidaApp_3/appPrizeExecute"
+#define ServiceAritcle            @"http://appalpha.iygdy.com/gravidaApp_3/appAritcleConsult"
+
+
+#define JsonTemp_Info             @"jsontemp_info"
+#define JsonTemp_Discover         @"jsontemp_discover"
+#define JsonTemp_MineProfile      @"jsontemp_profile"
+#define JsonTemp_SmartPush        @"jsontemp_smartpush"
+
+#define Yunfu_GetFortyYunqing     @"GC-1"
+
+#define Qiniu_GetBabyphotoToken   @"k-0"
+#define Qiniu_GetSquaerToken      @"k-1"
+#define Qiniu_GetDiaryToken       @"k-2"
+
+#define SP_Feedback              @"Setup-1"
+
+#define Yunfu_UploadAlert            @"Remind-1"
+#define Yunfu_DownloadAlert          @"Remind-2"
+
+#define Yunfu_UploadYunfuDiary       @"J-1"
+#define Yunfu_DownloadYunfuDiary     @"J-2"
+
+#define Adult_SendTargetWeight       @"Adult-1"
+#define Adult_TargetFinish           @"Adult-2"
+#define Adult_Compare                @"Adult-3"
+#define Adult_DownloadTargetWeight   @"Adult-4"
+#define Baby_Compare                 @"Baby-1"
+#define Baby_SendBabyPhoto           @"Baby-2"
+#define Baby_DownloadBabyPhoto       @"Baby-3"
+#define Baby_UploadBabyPhoto         @"Baby-4"
+
+
+#define Client_Type              @"0"     //客户端类型
+#define Auth_UploadMember        @"M-1"   //上传用户信息
+#define Auth_UploadMeasureData   @"M-2"   //上传测量数据
+
+#define Auth_SetAccountUser      @"M-3"   //设置账号主用户
+#define Auth_DownloadMember      @"D-1"   //下载用户数据
+#define Auth_DownloadMeasureData @"D-2"   //下载测量数据
+#define Auth_DownloadAllMeasureData   @"D-3"  //下载所有测量数据
+
+#define SQ_MoodNum               10
+#define SQ_DiscussNum            10
+#define SQ_UName                 @"13600000000"  //测试手机号
+#define SQ_UPwd                  @"123456"       //测试密码
+#define SQ_GetGMID               @"S-0"  //获取本地用户在云端的ID
+#define SQ_PublishMood           @"S-1"  //发布心情
+#define SQ_PublishMood2          @"S-1.2"  //发布心情七牛版
+#define SQ_PublishSecondDiscuss  @"S-3"  //发表二级评论
+#define SQ_PublishThirdDiscuss   @"S-4"  //发表三级评论
+#define SQ_CollectMood           @"S-2"  //收藏心情
+#define SQ_Praise                @"S-6"  //点赞
+#define SQ_Disagree              @"S-7"  //点踩
+#define SQ_Blacklist             @"S-8"  //列入黑名单
+#define SQ_PrivateMessage        @"S-10" //发送私信
+#define SQ_Subscribe             @"S-13"
+#define SQ_DeleteSubscribe       @"S-14"
+
+#define SQ_DeleteCollection      @"U-5"  //取消收藏
+#define SQ_DeleteMood            @"U-1"  //删除心情
+#define SQ_DeleteSecondDiscuss   @"U-2"  //删除二级评论
+#define SQ_DeleteThirdDiscuss   @"U-2"  //删除二级评论
+#define SQ_DeletePrivateMessage  @"U-7"  //删除整个私信
+
+#define SQ_GetMood                   @"G-1"         //获取心情
+#define SQ_GetWonderfulMood          @"G-2"         //获取精华
+#define SQ_GetSecondDiscuss          @"G-3"         //获取二级评论
+#define SQ_GetThirdDiscuss           @"G-4"         //获取三级评论
+#define SQ_GetCollectMood            @"G-5"         //获取我的收藏
+#define SQ_GetBlacklist              @"G-6"         //获取黑名单
+#define SQ_GetPrivateMessage         @"G-7"         //获取私信列表
+#define SQ_GetPrivateMessageDetail   @"G-8"         //获取私信对话
+#define SQ_GetDiscussForMe           @"G-9"         //获取我收到的评论
+#define SQ_GetMyMood                 @"G-10"        //我发表的心情
+#define SQ_GetUnreadMessage          @"G-11"        //获取未读信息
+#define SQ_GetSubscribe              @"G-17"        //我的订阅
+#define SQ_GetPraiseForMe            @"G-18"        //赞了我的
+
+#define SQ_SendQuestionText          @"I-8"         //发表问题文字
+#define SQ_SendQuestionPic           @"I-10"         //发表问题图片
+#define SQ_AskQuestion               @"I-1"         //孕妇提问
+#define SQ_DeleteQuestion            @"I-6"         //删除孕妇提问
+#define SQ_DeleteAnswer              @"I-7"         //删除回复
+#define SQ_PraiseAnswer              @"I-5"         //点赞记录
+#define SQ_AnswerQuestion            @"I-2"         //回复问题
+#define SQ_AnswerSecondQuestion      @"I-3"         //二级回复
+#define SQ_AceptAnswer               @"I-4"         //采纳答案
+#define SQ_GetQuestion               @"GI-1"        //获取孕妇提问
+#define SQ_GetAnswer                 @"GI-2"        //获取二级评论
+#define SQ_GetMyAnswer               @"GI-4"        //获取收到的回复
+#define SQ_GetMyQuestion             @"GI-3"        //获取收到的问题
+#define SQ_GetTopQuestion            @"GI-5"        //获取最新母婴问答
+
+#define SQ_GetZixun                  @"ZX-1"        //获取资讯
+#define SQ_GetAritcle                @"AC-1"        //获取推荐文章
+#define SQ_GetSmartPush              @"SP-1"        //获取推送文章
+#define SQ_GetSearchAnswer                 @"SP-2"        //获取查询答案
+
+#define SQ_Signin                    @"MS-1"        //签到
+#define SQ_GetMissionList            @"GM-1"        //获取任务列表
+#define SQ_GetPrizeList              @"GP-1"        //获取商品列表
+#define SQ_ExchangePrize             @"P-1"         //兑换商品
+
+#define Auth_Login  @"A-0"                 //登陆
+#define Auth_GetAuthcode  @"A-1"           //获取验证码
+#define Auth_Register     @"A-2"           //注册
+#define Auth_FindPwdAuthcode @"A-5"        //找回密码，发送验证码
+#define Auth_FindPwdNewPwd   @"A-6"        //修改密码
+#define Auth_CheckAuthcode   @"A-7"        //验证验证码
+
+#define kDeviceWidth                [UIScreen mainScreen].bounds.size.width
+#define KDeviceHeight               [UIScreen mainScreen].bounds.size.height
+
+#define iPhone5			([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+
+

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleDisplayName="KeepFit";
+
+"NSLocationWhenInUseUsageDescription" = "请点击“允许”以允许访问，若不允许，你将无法在云秤使用附近等功能，也无法选择地理位置。";
