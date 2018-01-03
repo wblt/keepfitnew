@@ -51,7 +51,7 @@ static NSDictionary *_options;
     NSAssert([options[UIViewAnimationImages] isKindOfClass:[NSArray class]], @"只能传图片数组!");
     
     _photos = options[UIViewAnimationImages];
-    if ([options[UIViewAnimationToView] width] == [options[UIViewAnimationToView] height]) {
+    if ([(UIView *)options[UIViewAnimationToView] width] == [(UIView *)options[UIViewAnimationToView] height]) {
         self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     }else{
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;

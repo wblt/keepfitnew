@@ -13,7 +13,6 @@
     NSArray *_aryControllers;
     long iLastViewTag;
     AppDelegate *_delegate;
-    
     DbModel *_db;
 }
 
@@ -491,7 +490,7 @@
     }
     else if (_currentMainController != controller && controller !=nil)
     {
-        CGRect frameController=controller.view.frame;
+        //CGRect frameController=controller.view.frame;
         [_currentMainController willMoveToParentViewController:nil];
         [self addChildViewController:controller];
         //self.view.userInteractionEnabled = NO;
@@ -685,16 +684,16 @@
 {
     if(pickerView.tag == 11)
     {
-        NSInteger row=[self.pickerTargetWeight selectedRowInComponent:1];
-        NSInteger row2=[self.pickerTargetWeight selectedRowInComponent:2];
-        NSString *strWeight=[aryWeight objectAtIndex:row];
-        NSString *strWeight2=[aryWeight2 objectAtIndex:row2];
-        NSString *height=[NSString stringWithFormat:@"%@%@",strWeight,strWeight2];
+        //NSInteger row=[self.pickerTargetWeight selectedRowInComponent:1];
+        //NSInteger row2=[self.pickerTargetWeight selectedRowInComponent:2];
+        //NSString *strWeight=[aryWeight objectAtIndex:row];
+        //NSString *strWeight2=[aryWeight2 objectAtIndex:row2];
+        //NSString *height=[NSString stringWithFormat:@"%@%@",strWeight,strWeight2];
     }
     else if (pickerView.tag == 22)
     {
-        NSInteger row=[self.pickerTargetStep selectedRowInComponent:0];
-        NSString *strStep=[aryStep objectAtIndex:row];
+        //NSInteger row=[self.pickerTargetStep selectedRowInComponent:0];
+        //NSString *strStep=[aryStep objectAtIndex:row];
     }
 }
 @end

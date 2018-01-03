@@ -3010,7 +3010,7 @@
 				ORGANIZATIONNAME = yunjian;
 				TargetAttributes = {
 					DE2FBD2617CDD37A009A9CDD = {
-						DevelopmentTeam = EQQ34ZE7PN;
+						DevelopmentTeam = HR6HGC9SU2;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -3585,7 +3585,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = EQQ34ZE7PN;
+				DEVELOPMENT_TEAM = HR6HGC9SU2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3625,7 +3625,7 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.LE.yunChen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LE.yunChen.test;
 				PRODUCT_NAME = KeepFit;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
@@ -3644,7 +3644,7 @@
 				CODE_SIGN_ENTITLEMENTS = KeepFit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = EQQ34ZE7PN;
+				DEVELOPMENT_TEAM = HR6HGC9SU2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3684,7 +3684,7 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.LE.yunChen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LE.yunChen.test;
 				PRODUCT_NAME = KeepFit;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

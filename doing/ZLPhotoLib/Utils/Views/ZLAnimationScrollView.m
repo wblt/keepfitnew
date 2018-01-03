@@ -155,7 +155,7 @@ static NSArray *_subViews = nil;
             
             for (int i = 0; i < subViews.count; i++) {
                 if ([(UIView *)subViews[i] tag] == 0) {
-                    if([subViews[i] width] == [[subViewsM firstObject] width] && [subViews[i] isKindOfClass:[[subViewsM firstObject] class]]){
+                    if([(UIView *)subViews[i] width] == [(UIView *)[subViewsM firstObject] width] && [subViews[i] isKindOfClass:[[subViewsM firstObject] class]]){
                         [subViewsM insertObject:subViews[i] atIndex:0];
                     }
                 }
